@@ -1,2 +1,3 @@
 # study
-Random projects
+
+Random projects for learning only
