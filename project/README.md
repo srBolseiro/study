@@ -77,3 +77,9 @@ The python code for lenghts is as follows:
 if len(username) < 4 or len(username) > 20 or len(password) < 8 or len(password) > 16:
 ```
 
+### 📌 Project’s title: SHIRE_RPG  
+### 📌 My name: Yuri A  
+### 📌 GitHub: srBolseiro  
+### 📌 edX: yurigregorio  
+### 📌 Location: São Pedro, São Paulo, Brazil  
+and, the date you have recorded this video.
