@@ -1,6 +1,6 @@
 # SHIRE_RPG
-
-SHIRE_RPG is a python based web application that allows rpg players to create and save their playersheets for games like WoD: Vampire the Masquerade 5th edition.
+#### SHIRE_RPG is a python based web application that allows rpg players to create and save their playersheets for games like WoD: Vampire the Masquerade 5th edition.
+#### Video Demo: [VIDEO]()
 
 ## Online usage:
 📦 Access https://bagginsbr.pythonanywhere.com/  
@@ -12,7 +12,7 @@ SHIRE_RPG is a python based web application that allows rpg players to create an
 
 ### 🚀 Tired of never finding a way to quickly create and save your rpg sheets when playing online?  
 SHIRE_RPG intends to solve it. Just create an account, create your sheet under our supported games and open it anywhere!  
-Since it's web-based, you can find it [@HERE](https://bagginsbr.pythonanywhere.com/)
+Since it's web-based, you can find it [HERE](https://bagginsbr.pythonanywhere.com/)
 
 ## 🔧 Local host: 
 📌 First you'll need to place the contents of /project inside a python ready virtual machine.   
