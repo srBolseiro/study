@@ -1,0 +1,79 @@
+:root {
+    --dblue: #001C28;
+    --red: #7A0B00;
+    --orange: #FF9106;
+    --offwhite: #FFEDC9;
+    --aqua: #41988E;
+}
+
+.margin-right {
+    margin-right: 1vw;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.topper-5 {
+    margin-top: 5vh;
+}
+
+.form-box {
+    background-color: #FFEDC9;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    box-shadow: 4px 4px 10px #ba660059;
+}
+
+.form-img {
+    background-image: url("./img/church.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.input-margin-top {
+    margin-top: 1rem;
+}
+
+.input-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.bg-fade {
+    margin: 3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: beige;
+    box-shadow: 0px 0px 20px;
+    height: fit-content;
+}
+
+.select_form {
+    width: 20rem;
+    margin: 1rem;
+}
+
+.button-margins {
+    margin-top: 1rem;
+}
+
+.boxed {
+    height: 20rem;
+    width: 30rem;
+    overflow-y: auto;
+}
+
+.bg_large {
+    background-image: url(https://steemitimages.com/640x0/https://i.imgur.com/GMjukQ3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.size {
+    height: max-content;
+    width: max-content;
+}

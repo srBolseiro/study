@@ -1,0 +1,39 @@
+{% extends "layout.html" %} {% block title %} Profile {% endblock %} {% block main
+%}
+
+<div class="d-flex justify-content-center topper-5 form-box form-img">
+    <form action="/profile" method="post" class="bg-fade">
+        <h2>Change Password</h2>
+        <!-- password -->
+        <div class="input-margin-top">
+            <label for="password">Current password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password"
+                pattern=".{8,}" maxlength="16" required>
+            <br>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new-password" class="form-control" placeholder="Password"
+                    required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="form-control"
+                    placeholder="Password" required>
+            </div>
+            <button class="btn btn-dark upper container input-margin-bottom input-margin-top" type="submit">DO IT,
+                MAN</button>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            {% for category, message in messages %}
+            <div class="alert alert-{{category}}" role="alert">
+                <h6>{{ message }}</h6>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+    </form>
+</div>
+
+{% endblock %}

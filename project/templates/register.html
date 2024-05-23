@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {% block main
+    %}
+
+    <div class="d-flex justify-content-center topper-5 form-box form-img">
+        <form action="/register" method="post" class="bg-fade" autocomplete="off">
+            <input autocomplete="false" name="hidden" type="text" style="display:none;">
+            <!-- username -->
+            <div class="input-margin-top">
+            <label for="username">Pick your username:</label>
+                <input type="text" class="form-control" id="username" placeholder="username" name="username" pattern=".{6,}" maxlength="16" required>
+                <small class="text-muted">May contain letters and numbers.<br>Must be larger than 4 characters.</small>
+            </div>
+
+            <!-- email -->
+            <div class="input-margin-top">
+            <label for="email">Enter your email:</label>
+            <input type="email" class="form-control" id="email" placeholder="email@email" name="email" required>
+            </div>
+
+            <!-- password -->
+            <div class="input-margin-top">
+            <label for="password">Choose a password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="password" pattern=".{8,}" maxlength="16" required>
+            <!-- confirm password -->
+            <input type="password" class="form-control" id="c_password" placeholder="Confirm your password" name="c_password" pattern=".{8,}" maxlength="16" required>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="box" required>
+            <label class="form-check-label" for="box">
+                I agree with the <strong>terms</strong> and <strong>conditions</strong>.
+            </label>
+        </div>
+        <button class="btn btn-dark upper container input-margin-bottom input-margin-top" type="submit">Register</button>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="alert alert-danger" role="alert">
+          {% for message in messages %}
+            <h6>{{ message }}</h6>
+          {% endfor %}
+          </div>
+        {% endif %}
+        {% endwith %}
+    </form>
+    </div>
+
+
+
+{% endblock %}
