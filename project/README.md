@@ -82,4 +82,4 @@ if len(username) < 4 or len(username) > 20 or len(password) < 8 or len(password)
 ### 📌 GitHub: srBolseiro  
 ### 📌 edX: yurigregorio  
 ### 📌 Location: São Pedro, São Paulo, Brazil  
-and, the date you have recorded this video.
+### 📌 Recorded at 23th of may 2024.
