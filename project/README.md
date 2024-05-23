@@ -42,3 +42,38 @@ flask run
 * [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for python.
 * [SQLite3](https://www.sqlite.org/) - Database handler.
 * [python-cs50](https://github.com/cs50/python-cs50) - CS50 library for Python.
+
+### Boring technical app details:
+## Authentication:
+Uses standard python library "werkzeug.security". Requires username sized between 4 and 20 chars and password sized between 8 and 16 chars.  
+Doesn't require much more security due to low sensitivity of data. Doesn't refuse connection after few attempts (to be implemented).  
+Uses either html form checking for pattern and server side verification.  
+All content require a session, except home page generic view.  
+
+## Pages:  
+# Home:
+Displays the currently supported games and player characters.  
+Current supported games, yet it's dinamically generated, doesn't come from a database, but from a python list inside "app.py". I've done it this way so I keep closer control of available game sheets.  
+Player sheets come from a database query that verify characters/game linked to user_id.  
+# Player Sheets:  
+Has a dropdown menu with dinamic generated input. Lists all character/game linked to user_id.  
+Has "pick", "create" and "delete" options.  
+📌 If create is selected, user'll be redirected to a creation environment.  
+📌 If pick is selected, user'll be redirected to the sheet rendered -> edit is yet to be implemented!!!!!!  
+📌 If delete is selected, user'll be redirected to a deletion environment.  
+# Creation environment:
+Each game has a unique sheet style. Each sheet has its own table inside the database.  
+The support for a game demands the html template design and table creation. The python function might be reused, just have to change some names.  
+It is required (and server verified) to fill "character name" and "player name" because those are the table keys used to query.  
+Once user clicks on "save", the server check every information filled and insert into the table if no other user AND character AND game match.
+# Editing:
+*Not implemented yet, sorry!*  
+# Profile:
+User may change password if needed.
+# Login
+*If user forgets password, he'll have to contact support*  
+The python code for lenghts is as follows:
+```bash
+if len(username) < 4 or len(username) > 20 or len(password) < 8 or len(password) > 16:
+```
+
