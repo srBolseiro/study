@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vampire: The Masquerade V5 Character Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vampire: The Masquerade V5 Character Sheet</h1>
+    <form action="/vampire_create" method="post">
+        <!-- Basic Info -->
+        <div class="section">
+            <h2>Basic Information</h2>
+            <label for="characterName">Character Name</label>
+            <input type="text" id="characterName" name="characterName">
+            <label for="playerName">Player Name</label>
+            <input type="text" id="playerName" name="playerName">
+            <label for="chronicle">Chronicle</label>
+            <input type="text" id="chronicle" name="chronicle">
+            <label for="concept">Concept</label>
+            <input type="text" id="concept" name="concept">
+            <label for="clan">Clan</label>
+            <input type="text" id="clan" name="clan">
+            <label for="generation">Generation</label>
+            <input type="text" id="generation" name="generation">
+        </div>
+
+        <!-- Attributes -->
+        <div class="section">
+            <h2>Attributes</h2>
+            <h3>Physical</h3>
+            <label for="strength">Strength</label>
+            <input type="number" id="strength" name="strength" min="0" max="5">
+            <label for="dexterity">Dexterity</label>
+            <input type="number" id="dexterity" name="dexterity" min="0" max="5">
+            <label for="stamina">Stamina</label>
+            <input type="number" id="stamina" name="stamina" min="0" max="5">
+
+            <h3>Social</h3>
+            <label for="charisma">Charisma</label>
+            <input type="number" id="charisma" name="charisma" min="0" max="5">
+            <label for="manipulation">Manipulation</label>
+            <input type="number" id="manipulation" name="manipulation" min="0" max="5">
+            <label for="composure">Composure</label>
+            <input type="number" id="composure" name="composure" min="0" max="5">
+
+            <h3>Mental</h3>
+            <label for="intelligence">Intelligence</label>
+            <input type="number" id="intelligence" name="intelligence" min="0" max="5">
+            <label for="wits">Wits</label>
+            <input type="number" id="wits" name="wits" min="0" max="5">
+            <label for="resolve">Resolve</label>
+            <input type="number" id="resolve" name="resolve" min="0" max="5">
+        </div>
+
+        <!-- Skills -->
+
+        <!-- Physical Skills -->
+        <div class="section">
+            <h2>Physical Skills</h2>
+            <label for="athletics">Athletics</label>
+            <input type="number" id="athletics" name="athletics" min="0" max="5">
+            <label for="brawl">Brawl</label>
+            <input type="number" id="brawl" name="brawl" min="0" max="5">
+            <label for="craft">Craft</label>
+            <input type="number" id="craft" name="craft" min="0" max="5">
+            <label for="drive">Drive</label>
+            <input type="number" id="drive" name="drive" min="0" max="5">
+            <label for="firearms">Firearms</label>
+            <input type="number" id="firearms" name="firearms" min="0" max="5">
+            <label for="larceny">Larceny</label>
+            <input type="number" id="larceny" name="larceny" min="0" max="5">
+            <label for="melee">Melee</label>
+            <input type="number" id="melee" name="melee" min="0" max="5">
+            <label for="stealth">Stealth</label>
+            <input type="number" id="stealth" name="stealth" min="0" max="5">
+            <label for="survival">Survival</label>
+            <input type="number" id="survival" name="survival" min="0" max="5">
+        </div>
+
+        <!-- Social Skills -->
+        <div class="section">
+            <h2>Social Skills</h2>
+            <label for="animalKen">Animal Ken</label>
+            <input type="number" id="animalKen" name="animalKen" min="0" max="5">
+            <label for="etiquette">Etiquette</label>
+            <input type="number" id="etiquette" name="etiquette" min="0" max="5">
+            <label for="insight">Insight</label>
+            <input type="number" id="insight" name="insight" min="0" max="5">
+            <label for="intimidation">Intimidation</label>
+            <input type="number" id="intimidation" name="intimidation" min="0" max="5">
+            <label for="leadership">Leadership</label>
+            <input type="number" id="leadership" name="leadership" min="0" max="5">
+            <label for="performance">Performance</label>
+            <input type="number" id="performance" name="performance" min="0" max="5">
+            <label for="persuasion">Persuasion</label>
+            <input type="number" id="persuasion" name="persuasion" min="0" max="5">
+            <label for="streetwise">Streetwise</label>
+            <input type="number" id="streetwise" name="streetwise" min="0" max="5">
+            <label for="subterfuge">Subterfuge</label>
+            <input type="number" id="subterfuge" name="subterfuge" min="0" max="5">
+        </div>
+
+        <!-- Mental Skills -->
+        <div class="section">
+            <h2>Mental Skills</h2>
+            <label for="academics">Academics</label>
+            <input type="number" id="academics" name="academics" min="0" max="5">
+            <label for="awareness">Awareness</label>
+            <input type="number" id="awareness" name="awareness" min="0" max="5">
+            <label for="finance">Finance</label>
+            <input type="number" id="finance" name="finance" min="0" max="5">
+            <label for="investigation">Investigation</label>
+            <input type="number" id="investigation" name="investigation" min="0" max="5">
+            <label for="medicine">Medicine</label>
+            <input type="number" id="medicine" name="medicine" min="0" max="5">
+            <label for="occult">Occult</label>
+            <input type="number" id="occult" name="occult" min="0" max="5">
+            <label for="politics">Politics</label>
+            <input type="number" id="politics" name="politics" min="0" max="5">
+            <label for="science">Science</label>
+            <input type="number" id="science" name="science" min="0" max="5">
+            <label for="technology">Technology</label>
+            <input type="number" id="technology" name="technology" min="0" max="5">
+        </div>
+
+        <!-- Disciplines -->
+        <div class="section">
+            <h2>Disciplines</h2>
+            <label for="discipline1">Discipline 1</label>
+            <input type="text" id="discipline1" name="discipline1">
+            <label for="discipline1Level">Level</label>
+            <input type="number" id="discipline1Level" name="discipline1Level" min="0" max="5">
+
+            <label for="discipline2">Discipline 2</label>
+            <input type="text" id="discipline2" name="discipline2">
+            <label for="discipline2Level">Level</label>
+            <input type="number" id="discipline2Level" name="discipline2Level" min="0" max="5">
+
+            <label for="discipline3">Discipline 3</label>
+            <input type="text" id="discipline3" name="discipline3">
+            <label for="discipline3Level">Level</label>
+            <input type="number" id="discipline3Level" name="discipline3Level" min="0" max="5">
+        </div>
+
+        <!-- Backgrounds, Merits, and Flaws -->
+        <div class="section">
+            <h2>Backgrounds, Merits, and Flaws</h2>
+            <label for="background1">Background 1</label>
+            <input type="text" id="background1" name="background1">
+            <label for="background1Level">Level</label>
+            <input type="number" id="background1Level" name="background1Level" min="0" max="5">
+
+            <label for="background2">Background 2</label>
+            <input type="text" id="background2" name="background2">
+            <label for="background2Level">Level</label>
+            <input type="number" id="background2Level" name="background2Level" min="0" max="5">
+
+            <label for="background3">Background 3</label>
+            <input type="text" id="background3" name="background3">
+            <label for="background3Level">Level</label>
+            <input type="number" id="background3Level" name="background3Level" min="0" max="5">
+
+            <label for="merit1">Merit 1</label>
+            <input type="text" id="merit1" name="merit1">
+
+            <label for="merit2">Merit 2</label>
+            <input type="text" id="merit2" name="merit2">
+
+            <label for="flaw1">Flaw 1</label>
+            <input type="text" id="flaw1" name="flaw1">
+
+            <label for="flaw2">Flaw 2</label>
+            <input type="text" id="flaw2" name="flaw2">
+
+            <!-- Add more backgrounds, merits, and flaws as needed -->
+        </div>
+
+        <!-- Health, Willpower, and Humanity -->
+        <div class="section">
+            <h2>Health, Willpower, and Humanity</h2>
+            <label for="health">Health</label>
+            <input type="number" id="health" name="health" min="0" max="10">
+            <label for="willpower">Willpower</label>
+            <input type="number" id="willpower" name="willpower" min="0" max="10">
+            <label for="humanity">Humanity</label>
+            <input type="number" id="humanity" name="humanity" min="0" max="10">
+        </div>
+
+        <input type="submit" value="Save Character">
+    </form>
+</body>
+
+</html>
