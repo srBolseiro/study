@@ -1,3 +1,1 @@
-# study
-
-Random projects for learning only
+# BACKUP of important files!
