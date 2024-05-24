@@ -1,4 +1,0 @@
-Flask
-sqlite3
-flask-session
-cs50
