@@ -1,4 +1,3 @@
-from sys import argv
 import streamlit as st
 import pandas as pd
 
